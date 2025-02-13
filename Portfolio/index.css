@@ -1,9 +1,29 @@
 h1 {
+
     text-align: center;
-    color: rgb(1,41,95);
+    color: rgb(72,169,166);
     font-style: Lucida;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+body {
+
+    background-color: rgb(1, 41, 95);
+    font-style: Lucida;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column; /* Ensures elements are stacked vertically */
+    align-items: center;
+   
+}
+
+nav { 
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+
+}
