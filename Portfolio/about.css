@@ -2,7 +2,7 @@ img {
 
     margin-top: 100px;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 50px;
     width: 20%;
     max-width: 500px; /* Prevents it from getting too big */
     height: auto; /* Maintains aspect ratio */
@@ -61,4 +61,18 @@ body {
     z-index: 1000;
     position: fixed;
 
+}
+
+.footer {
+
+    color: rgb(72,169,166);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+    gap: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
