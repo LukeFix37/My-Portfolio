@@ -1,42 +1,40 @@
-h1 {
+img {
 
-    text-align: center;
-    color: rgb(72,169,166);
-    font-style: Lucida;
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: 100px;
     justify-content: center;
+    border-radius: 20px;
+    width: 20%;
+    max-width: 500px; /* Prevents it from getting too big */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+
+}
+
+h3 {
+
+    color: rgb(249, 249, 249);
+    font-style: Georgia;
+    display: flex;
+    flex-direction: column;
 
 }
 
 body {
 
     background-color: rgb(1, 41, 95);
+    color: rgb(178, 136, 192);
     font-style: Lucida;
     font-size: 20px;
     display: flex;
     flex-direction: column; /* Ensures elements are stacked vertically */
     align-items: center;
-   
+
 }
 
 .navbar { 
 
     font-style: Lucida;
-    color: rgb(72,169,166);
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    gap: 20px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-
-}
-
-.navbar:visited {
-
     color: rgb(72,169,166);
     display: flex;
     justify-content: center;
@@ -55,9 +53,10 @@ body {
     padding: 10px; /* Padding around navbar */
     border: 3px solid rgb(1, 41, 95);
     border-radius: 10px; /* Rounded corners */
-    width: 50%;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
+    position: fixed;
 
 }
