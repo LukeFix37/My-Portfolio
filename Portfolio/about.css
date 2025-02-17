@@ -26,6 +26,8 @@ body {
     color: rgb(178, 136, 192);
     font-style: Lucida;
     font-size: 20px;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column; /* Ensures elements are stacked vertically */
     align-items: center;
