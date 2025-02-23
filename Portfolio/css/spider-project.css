@@ -62,14 +62,13 @@ body {
 }
 
 .project h1 {
-
-    text-align: center;
     color: rgb(1, 41, 95);
     font-style: Lucida;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; /* Use flex to center text */
+    margin-bottom: 20px; /* Add space below the heading */
 }
+
 
 .project img {
 
@@ -77,18 +76,16 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px; /* Reduce space below the image */
     border-radius: 25px;
     width: 60%;
-    flex: felx-wrap;
-    justify-content: center;
 
 }
 
-.solder {
+.project p {
 
-    transform: scale(0.75);
+    margin-top: 5px; /* Adjust space above the paragraph */
     
-
 }
 
 a:link {
@@ -130,3 +127,4 @@ a:visited {
     color: red !important;
     text-decoration: none;
 }
+
