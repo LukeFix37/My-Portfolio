@@ -6,7 +6,7 @@
     <head>
         <meta charset="tuf-8">
         <title>Resume</title>
-        <link rel="stylesheet" href="resume.css">
+        <link rel="stylesheet" href="css/resume.css">
     </head>
 
 
@@ -17,26 +17,26 @@
         <script>
             document.getElementById("donwloadButton").addEventListener("click", function(){
                 const link = document.createElement('a');
-                link.download = 'Resume.pdf';
+                link.download = 'documents/Resume.pdf';
                 link.click();
             });
         </script>
 
         <div class="resume-box">
-            <img src="PortfolioResume_Scrrenshot.png" alt="Picture of Luke Fixari's Resume" 
+            <img src="Images/PortfolioResume_Scrrenshot.png" alt="Picture of Luke Fixari's Resume" 
             height="800" width="600">
 
         </div>
         <br>
 
-        <button id="donwloadButton" onclick="window.location.href='Resume.pdf'">Download Resume</button>
+        <button id="donwloadButton" onclick="window.location.href='documents/Resume.pdf'">Download Resume</button>
 
         <div class="navbar-box">
             <nav class="navbar">
-            <a href="about.html">About Me</a>
-            <a href="contact.html">Contact Me</a>
-            <a href="index.html">Home</a>
-            <a href="projects.html">My Projects</a>
+            <a class="navbar-link" href="about.html">About Me</a>
+            <a class="navbar-link" href="contact.html">Contact Me</a>
+            <a class="navbar-link" href="index.html">Home</a>
+            <a class="navbar-link" href="projects.html">My Projects</a>
             </nav>
         </div>
 

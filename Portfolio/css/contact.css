@@ -10,16 +10,17 @@ h1 {
 
 }
 
-body { 
+body {
 
     background-color: rgb(1, 41, 95);
-    color: rgb(72,169,166);
     font-style: Lucida;
     font-size: 20px;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column; /* Ensures elements are stacked vertically */
     align-items: center;
-
+   
 }
 
 .navbar { 
@@ -51,32 +52,48 @@ body {
 
 }
 
-.project {
+.contact-info {
 
-    margin-left: 50px;
-    margin-right: 50px;
     background-color: rgb(178,136, 192);
     color:rgb(1, 41, 95);
     border: 5px solid #000;
     border-radius: 25px;
-}
-
-.project h1 {
-
-    text-align: center;
-    color: rgb(1, 41, 95);
-    font-style: Lucida;
+    width: 700px;
+    height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
 }
 
-.project img {
+.footer {
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border-radius: 25px;
+    color: rgb(72,169,166);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+    gap: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
+a:link {
+    color: rgb(1, 41, 95);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(1, 41, 95);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: rgb(1, 41, 95);
+    text-decoration: none;
 }

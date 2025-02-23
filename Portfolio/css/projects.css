@@ -1,5 +1,5 @@
 h1 {
-    
+
     margin-top: 100px;
     text-align: center;
     color: rgb(72,169,166);
@@ -7,45 +7,20 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
 
-
-body {
+body { 
 
     background-color: rgb(1, 41, 95);
+    color: rgb(72,169,166);
     font-style: Lucida;
     font-size: 20px;
     display: flex;
     flex-direction: column; /* Ensures elements are stacked vertically */
     align-items: center;
-   
+
 }
-
-.resume-box {
-
-    margin-top: 50px;
-    background-color: rgb(178,136, 192);
-    border: 5px solid #000;
-    border-radius: 25px;
-    width: 700px;
-    height: 1000px;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.resume-box img {
-
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    
-}
-
 
 .navbar { 
 
@@ -76,23 +51,62 @@ body {
 
 }
 
+.project {
 
-.footer {
-
-    margin-top: 100px;
-    color: rgb(72,169,166);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 10px 0;
-    gap: 20px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgb(178,136, 192);
+    color:rgb(1, 41, 95);
+    border: 5px solid #000;
+    border-radius: 25px;
 }
 
-button {
+.project h1 {
 
-    margin-top: 50px;
+    text-align: center;
+    color: rgb(1, 41, 95);
+    font-style: Lucida;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project img {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 25px;
+
+}
+
+a:link {
+    color: rgb(72,169,166);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(72,169,166);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: rgb(72,169,166);
+    text-decoration: none;
+}
+
+.navbar-link {
+
+    color: rgb(1, 41, 95) !important;
+    text-decoration: none;
+}
+
+.portfolio-description {
+    margin: 50px;
+}
+
+.portfolio {
+    color: red !important;
+    text-decoration: none;
 }
