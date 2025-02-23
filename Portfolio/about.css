@@ -66,6 +66,7 @@ body {
 .footer {
 
     color: rgb(72,169,166);
+    text-decoration: none;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -75,4 +76,26 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
+}
+
+
+a:link {
+    color: rgb(72,169,166);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(72,169,166);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: rgb(72,169,166);
+    text-decoration: none;
+}
+
+.navbar-link {
+
+    color: rgb(1, 41, 95) !important;
+    text-decoration: none;
 }
