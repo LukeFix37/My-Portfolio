@@ -1,99 +1,136 @@
-h1 {
+/* General Styles */
+body {
+    background-color: rgb(1, 41, 95);
+    font-family: "Lucida Sans", sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
 
+h1 {
     margin-top: 100px;
     text-align: center;
-    color: rgb(72,169,166);
-    font-style: Lucida;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
+    color: rgb(72, 169, 166);
+    font-family: "Lucida Sans", sans-serif;
 }
 
-body {
-
-    background-color: rgb(1, 41, 95);
-    font-style: Lucida;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column; /* Ensures elements are stacked vertically */
-    align-items: center;
-   
-}
-
-.navbar { 
-
-    font-style: Lucida;
-    color: rgb(72,169,166);
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    gap: 20px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-
-}
-
+/* Navbar Styles */
 .navbar-box {
-
-    background-color: rgb(49,133,252);
-    padding: 10px; /* Padding around navbar */
+    background-color: rgb(49, 133, 252);
+    padding: 10px;
     border: 3px solid rgb(1, 41, 95);
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px;
     width: 100%;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-    position: fixed;
-
 }
 
-.contact-info {
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Lucida Sans", sans-serif;
+    color: rgb(72, 169, 166);
+}
 
-    background-color: rgb(178,136, 192);
-    color:rgb(1, 41, 95);
+/* Contact Info Styles */
+.contact-info {
+    background-color: rgb(178, 136, 192);
+    color: rgb(1, 41, 95);
     border: 5px solid #000;
     border-radius: 25px;
+    font-size: 18pt;
     width: 700px;
-    height: 500px;
+    height: 450px;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-}
-
-.footer {
-
-    color: rgb(72,169,166);
-    display: flex;
-    justify-content: center;
+    margin-top: 50px; /* Adjust spacing from navbar */
     text-align: center;
-    padding: 10px 0;
-    gap: 20px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
 }
 
-a:link {
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: rgb(1, 41, 95);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Link Styles */
+a:link,
+a:visited {
     color: rgb(1, 41, 95);
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(1, 41, 95);
     text-decoration: underline;
 }
 
-a:visited {
-    color: rgb(1, 41, 95);
-    text-decoration: none;
+
+/* Responsive Styles */
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .contact-info {
+        width: 90%;
+        height: auto;
+        font-size: 14pt;
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Tablet (max-width: 900px) */
+@media (max-width: 900px) {
+    body {
+        font-size: 18px;
+    }
+
+    .contact-info {
+        width: 80%;
+        height: auto;
+        font-size: 16pt;
+        padding: 20px;
+    }
+
+    .navbar {
+        gap: 15px;
+    }
+}
+
+/* Desktop (min-width: 901px) */
+@media (min-width: 901px) {
+    .contact-info {
+        width: 700px;
+        height: 450px;
+        font-size: 18pt;
+    }
+
+    .navbar {
+        gap: 20px;
+    }
 }
