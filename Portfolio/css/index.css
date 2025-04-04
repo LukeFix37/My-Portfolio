@@ -1,92 +1,70 @@
-h1 {
-
-    text-align: center;
-    color: rgb(72,169,166);
-    font-style: Lucida;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
+/* General Styles */
 body {
-
     background-color: rgb(1, 41, 95);
-    font-style: Lucida;
-    font-size: 20px;
+    font-family: "Lucida", sans-serif;
+    font-size: 22px; /* Slightly increased font size */
     display: flex;
-    flex-direction: column; /* Ensures elements are stacked vertically */
+    flex-direction: column;
     align-items: center;
-   
+    margin: 0;
+    padding: 0;
 }
 
-.navbar { 
-
-    font-style: Lucida;
-    color: rgb(72,169,166);
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    gap: 20px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-
+h1 {
+    text-align: center;
+    color: rgb(72, 169, 166);
+    font-weight: 400;
+    margin: 18px 0; /* Slightly increased margin */
+    font-size: 2.75rem; /* Slightly increased font size */
 }
 
-.navbar:visited {
-
-    color: rgb(72,169,166);
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    gap: 20px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-
-}
-
+/* Navbar Styles */
 .navbar-box {
-
-    background-color: rgb(49,133,252);
-    padding: 10px; /* Padding around navbar */
-    border: 3px solid rgb(1, 41, 95);
-    border-radius: 10px; /* Rounded corners */
-    width: 50%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-
+    background-color: rgb(49, 133, 252);
+    padding: 14px; /* Slightly increased padding */
+    border: 1px solid rgb(1, 41, 95);
+    border-radius: 5px;
+    width: 75%; /* Slightly increased width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
 }
 
-.footer {
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 22px; /* Slightly increased gap */
+    padding: 10px 0; /* Slightly increased padding */
+    font-family: "Lucida", sans-serif;
+    color: rgb(72, 169, 166);
+    font-size: 20px; /* Slightly increased font size */
+}
 
-    color: rgb(72,169,166);
+/* Footer Styles */
+.footer {
+    color: rgb(72, 169, 166);
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 10px 0;
-    gap: 20px;
-    top: 0;
-    left: 0;
+    padding: 18px 0; /* Slightly increased padding */
     width: 100%;
-    z-index: 1000;
+    font-size: 18px; /* Slightly increased font size */
+    border-top: 1px solid rgb(72, 169, 166);
+    margin-top: 30px; /* Slightly increased margin */
 }
 
-a:link {
-    color: rgb(1, 41, 95) !important;
+/* Link Styles */
+a {
+    color: rgb(1, 41, 95);
     text-decoration: none;
+    font-weight: 500;
+    font-size: 20px; /* Slightly increased font size */
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: rgb(1, 41, 95);
+    color: rgb(49, 133, 252);
     text-decoration: underline;
 }
 
 a:visited {
     color: rgb(1, 41, 95);
-    text-decoration: none;
 }
