@@ -2,7 +2,7 @@
 body {
     background-color: rgb(1, 41, 95);
     font-family: "Lucida", sans-serif;
-    font-size: 22px; /* Slightly increased font size */
+    font-size: 22px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,28 +14,28 @@ h1 {
     text-align: center;
     color: rgb(72, 169, 166);
     font-weight: 400;
-    margin: 18px 0; /* Slightly increased margin */
-    font-size: 2.75rem; /* Slightly increased font size */
+    margin: 18px 0;
+    font-size: 2.75rem;
 }
 
 /* Navbar Styles */
 .navbar-box {
     background-color: rgb(49, 133, 252);
-    padding: 14px; /* Slightly increased padding */
+    padding: 14px;
     border: 1px solid rgb(1, 41, 95);
     border-radius: 5px;
-    width: 75%; /* Slightly increased width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
+    width: 75%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
     display: flex;
     justify-content: center;
-    gap: 22px; /* Slightly increased gap */
-    padding: 10px 0; /* Slightly increased padding */
+    gap: 22px;
+    padding: 10px 0;
     font-family: "Lucida", sans-serif;
     color: rgb(72, 169, 166);
-    font-size: 20px; /* Slightly increased font size */
+    font-size: 20px;
 }
 
 /* Footer Styles */
@@ -44,11 +44,11 @@ h1 {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 18px 0; /* Slightly increased padding */
+    padding: 18px 0;
     width: 100%;
-    font-size: 18px; /* Slightly increased font size */
+    font-size: 18px;
     border-top: 1px solid rgb(72, 169, 166);
-    margin-top: 30px; /* Slightly increased margin */
+    margin-top: 30px;
 }
 
 /* Link Styles */
@@ -56,7 +56,7 @@ a {
     color: rgb(1, 41, 95);
     text-decoration: none;
     font-weight: 500;
-    font-size: 20px; /* Slightly increased font size */
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 
@@ -67,4 +67,89 @@ a:hover {
 
 a:visited {
     color: rgb(1, 41, 95);
+}
+
+/* Responsive Styles */
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navbar-box {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+
+    .footer {
+        font-size: 16px;
+    }
+}
+
+/* Tablet (min-width: 601px and max-width: 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .navbar-box {
+        width: 85%;
+    }
+
+    .navbar {
+        gap: 16px;
+    }
+
+    a {
+        font-size: 19px;
+    }
+
+    .footer {
+        font-size: 17px;
+    }
+}
+
+/* Desktop (min-width: 1025px) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 22px;
+    }
+
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    .navbar-box {
+        width: 75%;
+    }
+
+    .navbar {
+        gap: 22px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    .footer {
+        font-size: 18px;
+    }
 }

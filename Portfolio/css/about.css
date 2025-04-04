@@ -99,3 +99,64 @@ a:visited {
     color: rgb(1, 41, 95) !important;
     text-decoration: none;
 }
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-box {
+        padding: 5px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    img {
+        width: 30%;
+    }
+
+    .navbar {
+        gap: 15px;
+    }
+
+    .navbar-box {
+        padding: 10px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    body {
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    img {
+        width: 20%;
+    }
+
+    .navbar {
+        gap: 20px;
+    }
+
+    .navbar-box {
+        padding: 15px;
+    }
+}
