@@ -1,122 +1,102 @@
-h1 {
-
-    margin-top: 100px;
-    text-align: center;
-    color: rgb(72,169,166);
-    font-style: Lucida;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
+/* General Styles */
 body { 
-
     background-color: rgb(1, 41, 95);
-    color: rgb(72,169,166);
-    font-style: Lucida;
+    color: rgb(49, 133, 252); /* Unified text color */
+    font-family: 'Lucida Sans', sans-serif;
     font-size: 20px;
     display: flex;
-    flex-direction: column; /* Ensures elements are stacked vertically */
+    flex-direction: column;
     align-items: center;
-
+    margin: 0;
+    padding: 0;
 }
 
-.navbar { 
-
-    font-style: Lucida;
-    color: rgb(72,169,166);
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    gap: 20px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-
-}
-
-.navbar-box {
-
-    background-color: rgb(49,133,252);
-    padding: 10px; /* Padding around navbar */
-    border: 3px solid rgb(1, 41, 95);
-    border-radius: 10px; /* Rounded corners */
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    position: fixed;
-
-}
-
-.project {
-
-    margin-left: 50px;
-    margin-right: 50px;
-    background-color: rgb(178,136, 192);
-    color:rgb(1, 41, 95);
-    border: 5px solid #000;
-    border-radius: 25px;
-}
-
-.project h1 {
-
+/* Header */
+h1 {
+    margin-top: 100px;
     text-align: center;
-    color: rgb(1, 41, 95);
-    font-style: Lucida;
+    color: rgb(178, 136, 192); /* Unified color */
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+/* Navbar */
+.navbar-box {
+    background-color: rgb(49, 133, 252);
+    padding: 10px;
+    border: 3px solid rgb(1, 41, 95);
+    border-radius: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+}
+
+.navbar-link {
+    color: rgb(1, 41, 95); /* Unified color */
+    text-decoration: none;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+}
+
+/* Project Section */
+.project {
+    margin: 75px 0;
+    background-color: rgb(1, 41, 95);
+    color: rgb(49, 133, 252); /* Unified color */
+    border: 5px solid rgb(49, 133, 252);
+    border-radius: 25px;
+    padding: 35px;
+
+}
+
+.project h2 {
+    margin: 75px;
+    text-align: center;
+    color: rgb(178, 136, 192); /* Unified color */
 }
 
 .project img {
-
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
     width: 50%;
     border-radius: 25px;
-
 }
 
-a:link {
-    color: rgb(72,169,166);
+/* Links */
+a {
+    color: rgb(178, 136, 192); /* Unified color */
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(72,169,166);
     text-decoration: underline;
 }
 
-a:visited {
-    color: rgb(72,169,166);
+/* Footer */
+.footer {
+    margin-top: 50px;
+    color: rgb(49, 133, 252); /* Unified color */
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid rgb(1, 41, 95);
+}
+
+.footer a {
+    color: rgb(49, 133, 252
+    ); /* Unified color */
     text-decoration: none;
 }
 
-.navbar-link {
-
-    color: rgb(1, 41, 95) !important;
-    text-decoration: none;
+.footer a:hover {
+    text-decoration: underline;
 }
 
-.portfolio-description {
-    margin: 50px;
-}
-
-.portfolio {
-    color: red !important;
-    text-decoration: none;
-}
-
-.wordlist-file {
-    color: red !important;
-    text-decoration: none;
-}
-
-.spider-project {
-    color: red !important;
-    text-decoration: none;
-}
