@@ -87,16 +87,17 @@ a:hover {
     color: rgb(49, 133, 252); /* Unified color */
     padding: 20px;
     text-align: center;
-    border-top: 3px solid rgb(1, 41, 95);
+    border-top: 2px solid rgb(49, 133, 252);
+    font-size: 0.9rem;
 }
 
 .footer a {
-    color: rgb(49, 133, 252
-    ); /* Unified color */
+    color: rgb(49, 133, 252); /* Unified color */
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .footer a:hover {
+    color: rgb(178, 136, 192);
     text-decoration: underline;
 }
-
