@@ -1,32 +1,35 @@
-h1 {
-    margin-top: 50px;
-    text-align: center;
-    color: rgb(72, 169, 166);
-    font-family: 'Lucida Sans', sans-serif;
-    font-size: 36px;
-}
-
+/* General Styles */
 body {
     background-color: rgb(1, 41, 95);
-    font-family: 'Lucida Sans', sans-serif;
+    font-family: "Lucida", sans-serif;
     font-size: 18px;
-    color: rgb(72, 169, 166);
+    color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 1.6;
 }
 
+h1 {
+    margin-top: 80px;
+    text-align: center;
+    color: rgb(72, 169, 166);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* Resume Box */
 .resume-box {
-    margin-top: 30px;
-    background-color: rgb(178, 136, 192);
-    border: 3px solid rgb(72, 169, 166);
+    margin-top: 40px;
+    background-color: rgb(1, 41, 95);
+    border: 2px solid rgb(72, 169, 166);
     border-radius: 15px;
-    width: 90%;
-    max-width: 700px;
+    width: 80%;
+    max-width: 800px;
     padding: 20px;
-    box-sizing: border-box;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,67 +39,85 @@ body {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    border: 3px solid rgb(72, 169, 166);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Navbar */
 .navbar-box {
     background-color: rgb(49, 133, 252);
-    padding: 10px;
+    padding: 16px;
     border-bottom: 3px solid rgb(1, 41, 95);
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .navbar-link {
-    color: rgb(1, 41, 95);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .navbar-link:hover {
+    color: rgb(72, 169, 166);
     text-decoration: underline;
+    transform: scale(1.05);
 }
 
+/* Footer */
 .footer {
     margin-top: 50px;
     color: rgb(72, 169, 166);
     text-align: center;
     padding: 20px 0;
     width: 100%;
-    border-top: 3px solid rgb(1, 41, 95);
+    border-top: 2px solid rgb(72, 169, 166);
+    background-color: rgb(1, 41, 95);
+    font-size: 16px;
 }
 
+/* Button */
 button {
     margin-top: 30px;
-    padding: 10px 20px;
-    background-color: rgb(72, 169, 166);
-    color: rgb(1, 41, 95);
+    padding: 12px 24px;
+    background-color: rgb(49, 133, 252);
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
     cursor: pointer;
-    font-family: 'Lucida Sans', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: rgb(49, 133, 252);
+    background-color: rgb(72, 169, 166);
+    transform: scale(1.05);
 }
 
+/* Links */
 a {
     color: rgb(72, 169, 166);
     text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
 a:hover {
+    color: rgb(49, 133, 252);
     text-decoration: underline;
 }
 
@@ -108,17 +129,17 @@ body {
 }
 
 .resume-box {
-    width: 95%;
+    width: 90%;
     padding: 15px;
 }
 
 .navbar {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .navbar-link {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* Tablet */
@@ -128,17 +149,17 @@ body {
     }
 
     .resume-box {
-        width: 80%;
+        width: 75%;
         padding: 20px;
     }
 
     .navbar {
         flex-direction: row;
-        gap: 15px;
+        gap: 20px;
     }
 
     .navbar-link {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -154,10 +175,10 @@ body {
     }
 
     .navbar {
-        gap: 25px;
+        gap: 30px;
     }
 
     .navbar-link {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
