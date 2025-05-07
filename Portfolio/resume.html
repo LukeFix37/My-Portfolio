@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luke Fixari | Resume</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/resume.css">
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <ul class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+
+  <section class="resume-section">
+    <div class="resume-container">
+      <h1>Luke Fixari</h1>
+      <p class="contact-info">
+        (614) 981-9543 | lukefixari@aol.com | <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
+      </p>
+
+      <hr class="section-divider">
+      <h2>SKILLS</h2>
+      <p class="skills">
+        C / C++ / C# / JavaScript / HTML / CSS / PHP / Python / Database Management (MySQL, NoSQL, SQL) / Unreal Engine / Software Development / Full-Stack Development / G++ / GCC / Algorithm Development / Git/GitHub / Node.js / Systems Programming / Systems Development / .NET / Test Cases / Data Structures / Computer Architecture / Algorithm Analysis / Database Design / Large Language Models / Debugging / Object-Oriented Programming / Dynamic Programming / Embedded Systems /
+      </p>
+
+      <hr class="section-divider">
+      <h2>EXPERIENCE</h2>
+
+      <div class="job">
+        <h3>HPU Minds: Simulation Engineer</h3>
+        <p class="job-location">High Point, NC | 09/2024 - Current</p>
+        <ul>
+          <li>Spearheading the design and implementation of immersive VR simulation software using Unreal Engine and C++.</li>
+          <li>Collaborating with a cross-functional team of 8+ engineers, modularizing project components and scripting dynamic simulation environments, resulting in a 30% increase in realism.</li>
+          <li>Engineering and integrating real-time input processing and object behavior, enhancing user immersion and contributing to a 40% increase in interactive engagement during simulation testing.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>WEB Wordlist Generator: Software Engineer</h3>
+        <p class="job-location">Remote | 02/2024 - 03/2024</p>
+        <ul>
+          <li>Developed a GitHub tool analyzing over 1,000 web application pages to generate custom wordlists for penetration testing.</li>
+          <li>Implemented automated scanning and testing processes using Python, leveraging GitHub for version control and collaboration.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Custom-Built Computer: Computer Engineer</h3>
+        <p class="job-location">Columbus, OH | 05/2023 - 06/2023</p>
+        <ul>
+          <li>Integrated software with hardware components, installing OS, configuring drivers, and ensuring hardware compatibility.</li>
+          <li>Conducted 50+ troubleshooting and optimization tests for hardware interfaces, achieving a 95% issue resolution rate.</li>
+          <li>Engineered computer systems by selecting hardware to meet performance requirements, improving system efficiency by 30%.</li>
+        </ul>
+      </div>
+
+      <hr class="section-divider">
+      <h2>EDUCATION</h2>
+      <p><strong>High Point University</strong> | High Point, NC | 08/2022 - 05/2026</p>
+      <p>B.S. Computer Science, Minor: Game Design</p>
+      <p><strong>Relevant Coursework:</strong> Advanced Programming with Data Structures, Advanced Data Structures/Algorithm Development, Computer Systems, Database Systems, Web Technologies</p>
+
+      <hr class="section-divider">
+      <h2>OTHER EXPERIENCE</h2>
+      <p><strong>The Home Depot: Customer Service Associate</strong> | Gahanna, OH | 05/2023 - Current</p>
+      <ul>
+        <li>Identified and resolved customer pain points by suggesting personalized product solutions, increasing satisfaction scores by 15% and boosting weekly sales by 10%.</li>
+      </ul>
+    </div>
+  </section>
+
+  <button class="download-button" onclick="downloadResume()">📄 Download Resume (PDF)</button>
+  </div>
+
+  <script>
+    function downloadResume() {
+      const link = document.createElement('a');
+      link.href = '/documents/Resume.pdf';
+      link.download = '/documents/Resume.pdf';
+      link.click();
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2025 Luke Fixari. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

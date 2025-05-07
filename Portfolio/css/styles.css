@@ -1,0 +1,106 @@
+/* General Reset */
+body, h1, ul, li, a, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    background-color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* Hero Container Styling */
+.hero-container {
+    background-image: url('../images/portfolio-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    color: #f0f0f0;
+    margin-bottom: 25px;
+}
+
+/* Logo Styling */
+.logo {
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation Menu Styling */
+.nav-menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 12px 18px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #ffffff;
+    color: #f0f0f0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .nav-menu li a {
+        font-size: 1.1rem;
+        padding: 10px 14px;
+    }
+}
