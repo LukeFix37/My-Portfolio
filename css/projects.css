@@ -159,6 +159,17 @@ footer {
   color: #c9d1d9;
 }
 
+.project-link {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.project-link:hover {
+  color: #8ab4f8;
+  text-decoration: underline;
+}
   
   /* Mobile Styles: Up to 600px */
 @media (max-width: 600px) {
