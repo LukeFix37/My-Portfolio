@@ -121,3 +121,56 @@ footer {
     color: #8ab4f8;
   }
   
+  /* Mobile Styles: Up to 600px */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .project-card h2 {
+    font-size: 18px;
+  }
+
+  .project-card p {
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+}
+
+/* Tablet Styles: 601px to 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .nav-container {
+    gap: 30px;
+  }
+
+  .project-card h2 {
+    font-size: 20px;
+  }
+
+  .project-card p {
+    font-size: 15px;
+  }
+}
+
+/* Desktop Styles: 901px and up (already handled by your base styles) */
