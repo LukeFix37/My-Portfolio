@@ -25,9 +25,6 @@
   <section class="resume-section">
     <div class="resume-container">
       <h1>Luke Fixari</h1>
-      <p class="contact-info">
-        (614) 981-9543 | lukefixari@aol.com | <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Portfolio</a>
-      </p>
 
       <hr class="section-divider">
       <h2>SUMMARY</h2>
@@ -84,13 +81,13 @@
     </div>
   </section>
 
-  <button class="download-button" onclick="downloadResume()">📄 Download Resume (.docx)</button>
+  <button class="download-button" onclick="downloadResume()">📄 Download Resume (PDF)</button>
 
   <script>
     function downloadResume() {
       const link = document.createElement('a');
-      link.href = '/documents/Resume.docx';
-      link.download = 'Resume.docx';
+      link.href = '/documents/Resume.pdf';
+      link.download = 'Resume.pdf';
       link.click();
     }
   </script>
