@@ -3,14 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', redirectTo: '/home' } // Wildcard route for 404s
+  // Add your other routes here
+  { path: '**', redirectTo: '/home' } // Catch-all route
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { 
-    useHash: false, // Keep this false for clean URLs
-    enableTracing: false 
-  })],
+  imports: [RouterModule.forRoot(routes, { useHash: false })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
