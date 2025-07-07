@@ -199,7 +199,7 @@ export class ContactComponent {
       title: 'Email',
       description: 'Get in touch directly via email for project inquiries and collaborations',
       icon: '📧',
-      url: 'mailto:your.email@example.com',
+      url: 'mailto:lukefixari@aol.com',
       isExternal: false,
       gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
     },
@@ -207,7 +207,7 @@ export class ContactComponent {
       title: 'LinkedIn',
       description: 'Connect with me professionally and explore my career journey',
       icon: '💼',
-      url: 'https://linkedin.com/in/yourprofile',
+      url: 'https://www.linkedin.com/in/luke-fixari/',
       isExternal: true,
       gradient: 'linear-gradient(135deg, #0077b5 0%, #00a0dc 100%)'
     },
@@ -215,7 +215,7 @@ export class ContactComponent {
       title: 'GitHub',
       description: 'Check out my code repositories and open-source contributions',
       icon: '🐙',
-      url: 'https://github.com/yourusername',
+      url: 'https://github.com/LukeFix37',
       isExternal: true,
       gradient: 'linear-gradient(135deg, #333 0%, #666 100%)'
     }
@@ -241,11 +241,10 @@ export class ContactComponent {
   }
 
   downloadResume(): void {
-    // Replace with your actual resume download logic
-    const resumeUrl = '/assets/resume.pdf'; // Update this path
+    const resumeUrl = '/documents/Resume (1).pdf'; // Make sure this path is correct and the file exists
     const link = document.createElement('a');
     link.href = resumeUrl;
-    link.download = 'YourName_Resume.pdf';
+    link.download = 'Resume (1).pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
