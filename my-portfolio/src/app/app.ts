@@ -1,7 +1,22 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { NavigationComponent } from './components/navigation.component';
+import { HeroComponent } from './components/hero.component';
+import { AboutComponent } from './components/about.component';
+import { SkillsComponent } from './components/skills.component';
+import { ProjectsComponent } from './components/projects.component';
+import { ContactComponent } from './components/contact.component';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [
+    NavigationComponent,
+    HeroComponent,
+    AboutComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    ContactComponent,
+  ],
   template: `
     <div class="min-h-screen">
       <app-navigation [isScrolled]="isScrolled"></app-navigation>
@@ -12,22 +27,18 @@ import { Component, OnInit, HostListener } from '@angular/core';
       <app-contact></app-contact>
     </div>
   `,
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.css']
 })
 export class AppComponent implements OnInit {
-  title = 'portfolio-website';
   isScrolled = false;
 
-  constructor() { }
-
   ngOnInit(): void {
-    // Initialize scroll animations
     this.initializeScrollAnimations();
   }
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll')
   onWindowScroll(): void {
-    this.isScrolled = window.pageYOffset > 100;
+    this.isScrolled = window.scrollY > 100;
   }
 
   private initializeScrollAnimations(): void {
@@ -43,7 +54,6 @@ export class AppComponent implements OnInit {
           element.style.opacity = '1';
           element.style.transform = 'translateY(0)';
 
-          // Animate skill progress bars
           if (element.classList.contains('skill-card')) {
             const progressBar = element.querySelector('.skill-progress') as HTMLElement;
             if (progressBar) {
@@ -57,7 +67,6 @@ export class AppComponent implements OnInit {
       });
     }, observerOptions);
 
-    // Observe elements after view init
     setTimeout(() => {
       document.querySelectorAll('.loading').forEach(el => {
         const element = el as HTMLElement;
@@ -67,7 +76,6 @@ export class AppComponent implements OnInit {
         observer.observe(element);
       });
 
-      // Initialize skill progress bars
       document.querySelectorAll('.skill-progress').forEach(bar => {
         (bar as HTMLElement).style.width = '0%';
       });
@@ -77,10 +85,7 @@ export class AppComponent implements OnInit {
   scrollToSection(sectionId: string): void {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
 }

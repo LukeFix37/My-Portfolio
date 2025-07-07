@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-about',
+  standalone: true,  // ← make sure this is here if you're using standalone
+  imports: [CommonModule],
   template: `
     <section id="about" class="py-20 bg-white/5 backdrop-blur-lg">
       <div class="max-w-7xl mx-auto px-5">
@@ -45,10 +48,8 @@ import { Component } from '@angular/core';
       </div>
     </section>
   `,
-  styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-
   stats = [
     { number: '5+', label: 'Years Experience' },
     { number: '50+', label: 'Projects Completed' },

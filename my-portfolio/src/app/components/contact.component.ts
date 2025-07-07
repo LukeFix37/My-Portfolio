@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 interface ContactLink {
   title: string;
@@ -10,6 +11,8 @@ interface ContactLink {
 
 @Component({
   selector: 'app-contact',
+  standalone: true,
+  imports: [CommonModule],
   template: `
     <section id="contact" class="py-20 bg-white/5 backdrop-blur-lg text-center">
       <div class="max-w-7xl mx-auto px-5">
@@ -41,7 +44,6 @@ interface ContactLink {
       </div>
     </section>
   `,
-  styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
 

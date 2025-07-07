@@ -1,14 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
+  standalone: true,
+  imports: [CommonModule],
   template: `
     <nav class="fixed w-full top-0 z-50 transition-all duration-300"
          [class]="isScrolled ? 'bg-purple-primary/95 backdrop-blur-lg' : 'bg-white/10 backdrop-blur-lg border-b border-white/20'">
       <div class="flex justify-between items-center px-8 py-4">
         <a (click)="scrollToSection('home')" 
            class="text-3xl font-bold text-gradient cursor-pointer">
-          SE
+          <span class="text-white">Luke Fixari</span>
         </a>
         <ul class="hidden md:flex list-none gap-8">
           <li>
@@ -50,7 +53,6 @@ import { Component, Input } from '@angular/core';
       </div>
     </nav>
   `,
-  styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent {
   @Input() isScrolled: boolean = false;

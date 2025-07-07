@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-hero',
+  standalone: true,
+  imports: [CommonModule],
   template: `
     <section id="home" class="min-h-screen flex items-center justify-center text-center pt-20 relative overflow-hidden">
       <!-- Animated Background Pattern -->
@@ -38,7 +41,6 @@ import { Component, OnInit } from '@angular/core';
       </div>
     </section>
   `,
-  styleUrls: ['./hero.component.css']
 })
 export class HeroComponent implements OnInit {
 

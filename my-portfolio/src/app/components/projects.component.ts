@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 interface Project {
@@ -11,6 +12,8 @@ interface Project {
 
 @Component({
   selector: 'app-projects',
+  standalone: true,
+  imports:[CommonModule],
   template: `
     <section id="projects" class="py-20">
       <div class="max-w-7xl mx-auto px-5">
@@ -62,7 +65,6 @@ interface Project {
       </div>
     </section>
   `,
-  styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
 
