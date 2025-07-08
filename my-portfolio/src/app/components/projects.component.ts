@@ -402,7 +402,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         {
             title: 'Full Stack E-Commerce Platform',
             description: 'Complete e-commerce solution featuring modern UI, secure payment processing, inventory management, and admin dashboard. Built with responsive design and optimized for performance.',
-            technologies: ['HTML5', 'CSS3', 'JavaScript', 'SQL', 'MySQL', 'Bootstrap'],
+            technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'SQL', 'MySQL', 'Bootstrap'],
             githubLink: 'https://github.com/LukeFix37/Game-Ecommerce-website',
             category: 'Web App',
             featured: true,
