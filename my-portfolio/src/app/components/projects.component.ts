@@ -423,15 +423,26 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
             fallbackGradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
         },
         {
-                title: 'Exposure Therapy VR Simulation',
-                description: 'Virtual reality application for exposure therapy, designed to help users overcome phobias and anxiety disorders. Features immersive environments and real-time feedback.',
-                technologies: ['Unreal Engine', 'C++', 'Arduino', 'Oculus Quest'],
-                githubLink: 'https://github.com/LukeFix37/Spider_Project_2024/tree/main',
-                category: 'Tool',
-                featured: false,
-                image: '/images/VR-Sim.png',
-                fallbackIcon: '🥽',
-                fallbackGradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
+            title: 'Exposure Therapy VR Simulation',
+            description: 'Virtual reality application for exposure therapy, designed to help users overcome phobias and anxiety disorders. Features immersive environments and real-time feedback.',
+            technologies: ['Unreal Engine', 'C++', 'Arduino', 'Oculus Quest'],
+            githubLink: 'https://github.com/LukeFix37/Spider_Project_2024/tree/main',
+            category: 'Tool',
+            featured: false,
+            image: '/images/VR-Sim.png',
+            fallbackIcon: '🥽',
+            fallbackGradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
+        },
+        {
+            title: 'WEB Wordlist Generator',
+            description: 'A powerful wordlist generator for web applications, designed to create custom wordlists for penetration testing and security assessments. Features include customizable patterns, character sets, and output formats.',
+            technologies: ['Python', 'Docker'],
+            githubLink: 'https://github.com/LukeFix37/web-wordlist-generator',
+            category: 'Tool',
+            featured: false,
+            image: '/images/WEB-WORDLIST_Screenshot.png',
+            fallbackIcon: '📝',
+            fallbackGradient: 'linear-gradient(135deg, #ff6a00 0%, #ee0979 100%)'
         }
     ];
 
