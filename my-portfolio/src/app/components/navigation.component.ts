@@ -22,7 +22,7 @@ interface NavItem {
         <a (click)="scrollToSection('home')" 
            class="logo-container cursor-pointer group relative">
           <div class="flex items-center gap-3">
-            <div class="logo-icon text-3xl animate-float">⚡</div>
+            <!-- Removed logo-icon here -->
             <span class="text-2xl md:text-3xl font-bold text-gradient-cyber group-hover:text-gradient transition-all duration-300">
               Luke Fixari
             </span>
@@ -154,9 +154,7 @@ interface NavItem {
       transform: scale(1.05);
     }
 
-    .logo-icon {
-      filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.6));
-    }
+    /* Removed .logo-icon styles */
 
     /* Mobile Menu Hamburger */
     .hamburger-icon {
