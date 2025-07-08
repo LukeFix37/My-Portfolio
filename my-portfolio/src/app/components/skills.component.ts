@@ -391,7 +391,7 @@ skills: Skill[] = [
 ];
 
   skillStats = [
-    { value: '8+', label: 'Technologies' },
+    { value: '15+', label: 'Technologies' },
     { value: '80%', label: 'Avg. Proficiency' },
     { value: '500+', label: 'Hours Learning' },
     { value: '24/7', label: 'Passion Level' }
