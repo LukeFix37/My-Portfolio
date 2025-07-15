@@ -443,6 +443,28 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
             image: '/images/WEB-WORDLIST_Screenshot.png',
             fallbackIcon: '📝',
             fallbackGradient: 'linear-gradient(135deg, #ff6a00 0%, #ee0979 100%)'
+        },
+        {
+            title: 'DevDash',
+            description: 'A developer dashboard application that aggregates project management tools, code repositories, and CI/CD pipelines into a single interface. Features include real-time notifications, task management, and analytics.',
+            technologies: ['React', 'Node.js', 'TypeScript', 'TailwindCSS', 'MongoDB', 'REST API'],
+            githubLink: 'https://github.com/LukeFix37/devdash/tree/main',
+            category: 'Web App',
+            featured: false,
+            image: '/images/DevDash.png',
+            fallbackIcon: '📊',
+            fallbackGradient: 'linear-gradient(135deg, #00c6ff 0%, #0072ff 100%)'
+        },
+        {
+            title: 'Budgeting Tool',
+            description: 'A personal budgeting tool that helps users track expenses, set financial goals, and visualize spending patterns. Features include budget creation, expense categorization, and financial reporting.',
+            technologies: ['React', 'JavaScript', 'TailwindCSS'],
+            githubLink: 'https://github.com/LukeFix37/budgeting-tool',
+            category: 'Tool',
+            featured: false,
+            image: '/images/Budgeting-Tool.png',
+            fallbackIcon: '💰',
+            fallbackGradient: 'linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%)'
         }
     ];
 
