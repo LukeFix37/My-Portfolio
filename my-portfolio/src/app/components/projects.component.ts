@@ -457,7 +457,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         },
         {
             title: 'Budgeting Tool',
-            description: 'A personal budgeting tool that helps users track expenses, set financial goals, and visualize spending patterns. Features include budget creation, expense categorization, and financial reporting.',
+            description: 'A personal budgeting tool that helps users track expenses, set financial goals, and visualize spending patterns. Features include budget creation, and expense categorization.',
             technologies: ['React', 'JavaScript', 'TailwindCSS'],
             githubLink: 'https://github.com/LukeFix37/budgeting-tool',
             category: 'Tool',
