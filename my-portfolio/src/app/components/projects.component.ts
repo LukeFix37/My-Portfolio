@@ -467,6 +467,17 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
             image: '/images/Budgeting-Tool.png',
             fallbackIcon: '💰',
             fallbackGradient: 'linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%)'
+        },
+        {
+            title: 'Wymon',
+            description: 'A 2.5D Metroidvania Platformer game built with Unreal Engine and C++.',
+            technologies: ['Unreal Engine', 'C++', 'Jira'],
+            githubLink: 'https://github.com/DaEmeraldGuy/Wymon',
+            category: 'Web App',
+            featured: false,
+            image: '/images/Wymon.png',
+            fallbackIcon: '🎮',
+            fallbackGradient: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)'
         }
     ];
 
