@@ -472,7 +472,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
             title: 'Wymon',
             description: 'A 2.5D Metroidvania Platformer game built with Unreal Engine and C++.',
             technologies: ['Unreal Engine', 'C++', 'Jira'],
-            githubLink: 'https://github.com/DaEmeraldGuy/Wymon',
+            githubLink: 'https://github.com/DaEmeraldGuy/WymonUE',
             category: 'Web App',
             featured: false,
             image: '/images/Wymon.png',
