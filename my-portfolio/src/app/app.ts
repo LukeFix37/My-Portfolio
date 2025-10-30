@@ -1,15 +1,20 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { Router, RouterOutlet, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 import { NavigationComponent } from './components/navigation.component';
 import { HeroComponent } from './components/hero.component';
 import { AboutComponent } from './components/about.component';
 import { SkillsComponent } from './components/skills.component';
 import { ProjectsComponent } from './components/projects.component';
 import { ContactComponent } from './components/contact.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
+    CommonModule,
+    RouterOutlet,
     NavigationComponent,
     HeroComponent,
     AboutComponent,
@@ -20,17 +25,35 @@ import { ContactComponent } from './components/contact.component';
   template: `
     <div class="min-h-screen">
       <app-navigation [isScrolled]="isScrolled"></app-navigation>
-      <app-hero></app-hero>
-      <app-about></app-about>
-      <app-skills></app-skills>
-      <app-projects></app-projects>
-      <app-contact></app-contact>
+      
+      <!-- Main Portfolio Page -->
+      <div *ngIf="isMainPage">
+        <app-hero></app-hero>
+        <app-about></app-about>
+        <app-skills></app-skills>
+        <app-projects></app-projects>
+        <app-contact></app-contact>
+      </div>
+      
+      <!-- Router Outlet for Other Pages (like Wymon) -->
+      <router-outlet></router-outlet>
     </div>
   `,
   styleUrls: ['./app.css']
 })
 export class AppComponent implements OnInit {
   isScrolled = false;
+  isMainPage = true;
+
+  constructor(private router: Router) {
+    // Listen to route changes to determine if we're on the main page
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+      // Show main page components only on root route
+      this.isMainPage = event.url === '/' || event.url === '/home' || event.url === '';
+    });
+  }
 
   ngOnInit(): void {
     this.initializeScrollAnimations();
