@@ -133,7 +133,7 @@ interface Sprint {
           </p>
           <div class="text-center mb-12">
             <span class="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/50 text-yellow-300 font-semibold">
-              🚧 Currently in Sprint 3 - Game in Active Development
+              🚧 Currently in Sprint 4 - Game in Active Development
             </span>
           </div>
 
