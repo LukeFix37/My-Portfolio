@@ -384,7 +384,7 @@ interface Sprint {
                 Follow Our Development Journey
               </h2>
               <p class="text-responsive-md opacity-90 mb-8">
-                Wymon is currently in active development (Sprint 3). Check out the source code, follow our progress, and see what we're working on next!
+                Wymon is currently in active development (Sprint 4). Check out the source code, follow our progress, and see what we're working on next!
               </p>
               <a
                 href="https://github.com/DaEmeraldGuy/WymonUE"
@@ -676,6 +676,24 @@ export class WymonComponent implements OnInit {
         'Door animation system',
         'Battle Arena behavior mechanics'
       ]
+    },
+    {
+      number: 4,
+      title: 'Sound Design and Audio Implementation',
+      duration: 'Week 7-8',
+      icon: '🔊',
+      goals: [
+        'Design and Implement immersive sound effects for environment',
+        'Integrate door and arena SFX synced with Timeline events',
+        'Balance attenuation, volume, and spatial audio settings',
+        'Enhance environmental atmosphere through reverb and ambient cues'
+      ],
+      achievements: [
+        'SFX synced cleanly with Timeline animations',
+        'Environmental reverb zones implemented for stronger atmosphere',
+        'Input sounds synced through spawn 2D sound',
+        'Improved overall mix and audio responsiveness'
+      ]
     }
   ];
 
@@ -694,7 +712,7 @@ export class WymonComponent implements OnInit {
   },
   {
     name: 'Luke Fixari',
-    role: 'Programmer'
+    role: 'Programmer & Sound Design'
   },
   {
     name: 'James Branford',
